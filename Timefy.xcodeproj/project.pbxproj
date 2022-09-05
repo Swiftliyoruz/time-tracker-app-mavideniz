@@ -13,9 +13,11 @@
 		660C2A7528C632E10099B9D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660C2A7328C632E10099B9D3 /* Main.storyboard */; };
 		660C2A7728C632E20099B9D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660C2A7628C632E20099B9D3 /* Assets.xcassets */; };
 		660C2A7A28C632E20099B9D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660C2A7828C632E20099B9D3 /* LaunchScreen.storyboard */; };
+		7231BE2B53EABBE988C72D62 /* Pods_Timefy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7AB7BBEEFCD294E6A66F9B /* Pods_Timefy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60EE1206B4FBC3D4BD46A4F0 /* Pods-Timefy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timefy.release.xcconfig"; path = "Target Support Files/Pods-Timefy/Pods-Timefy.release.xcconfig"; sourceTree = "<group>"; };
 		660C2A6A28C632E10099B9D3 /* Timefy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timefy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		660C2A6D28C632E10099B9D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		660C2A6F28C632E10099B9D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		660C2A7628C632E20099B9D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		660C2A7928C632E20099B9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		660C2A7B28C632E20099B9D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD7AB7BBEEFCD294E6A66F9B /* Pods_Timefy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Timefy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC2D2F151936203BE7860B69 /* Pods-Timefy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timefy.debug.xcconfig"; path = "Target Support Files/Pods-Timefy/Pods-Timefy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7231BE2B53EABBE988C72D62 /* Pods_Timefy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44949108A70FE285F1F18607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD7AB7BBEEFCD294E6A66F9B /* Pods_Timefy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		660C2A6128C632E10099B9D3 = {
 			isa = PBXGroup;
 			children = (
 				660C2A6C28C632E10099B9D3 /* Timefy */,
 				660C2A6B28C632E10099B9D3 /* Products */,
+				FA574195EB3264162B8C6829 /* Pods */,
+				44949108A70FE285F1F18607 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = Timefy;
 			sourceTree = "<group>";
 		};
+		FA574195EB3264162B8C6829 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC2D2F151936203BE7860B69 /* Pods-Timefy.debug.xcconfig */,
+				60EE1206B4FBC3D4BD46A4F0 /* Pods-Timefy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 660C2A7E28C632E20099B9D3 /* Build configuration list for PBXNativeTarget "Timefy" */;
 			buildPhases = (
+				1ED6253169C64B1EE66D912A /* [CP] Check Pods Manifest.lock */,
 				660C2A6628C632E10099B9D3 /* Sources */,
 				660C2A6728C632E10099B9D3 /* Frameworks */,
 				660C2A6828C632E10099B9D3 /* Resources */,
+				660C2A8128C634AF0099B9D3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1ED6253169C64B1EE66D912A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Timefy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		660C2A8128C634AF0099B9D3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		660C2A6628C632E10099B9D3 /* Sources */ = {
@@ -282,6 +350,7 @@
 		};
 		660C2A7F28C632E20099B9D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC2D2F151936203BE7860B69 /* Pods-Timefy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +379,7 @@
 		};
 		660C2A8028C632E20099B9D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60EE1206B4FBC3D4BD46A4F0 /* Pods-Timefy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -6,5 +6,6 @@ target 'Timefy' do
   use_frameworks!
 
   # Pods for Timefy
+  pod 'SwiftLint'
 
 end

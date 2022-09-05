@@ -1,0 +1,6 @@
+framework module Pods_Timefy {
+  umbrella header "Pods-Timefy-umbrella.h"
+
+  export *
+  module * { export * }
+}
