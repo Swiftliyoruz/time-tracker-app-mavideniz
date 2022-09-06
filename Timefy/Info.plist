@@ -21,5 +21,18 @@
 			</array>
 		</dict>
 	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Rubik-Black.ttf</string>
+		<string>Rubik-BlackItalic.ttf</string>
+		<string>Rubik-Bold</string>
+		<string>Rubik-BoldItalic</string>
+		<string>Rubik-Italic</string>
+		<string>Rubik-Light</string>
+		<string>Rubik-LightItalic</string>
+		<string>Rubik-Mediıum</string>
+		<string>Rubik-MediumItalic</string>
+		<string>Rubik-Regular</string>
+	</array>
 </dict>
 </plist>
