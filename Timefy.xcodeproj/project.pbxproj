@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		660C2A6E28C632E10099B9D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C2A6D28C632E10099B9D3 /* AppDelegate.swift */; };
 		660C2A7028C632E10099B9D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C2A6F28C632E10099B9D3 /* SceneDelegate.swift */; };
-		660C2A7228C632E10099B9D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 660C2A7128C632E10099B9D3 /* ViewController.swift */; };
 		660C2A7528C632E10099B9D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660C2A7328C632E10099B9D3 /* Main.storyboard */; };
 		660C2A7728C632E20099B9D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660C2A7628C632E20099B9D3 /* Assets.xcassets */; };
 		660C2A7A28C632E20099B9D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660C2A7828C632E20099B9D3 /* LaunchScreen.storyboard */; };
@@ -24,6 +23,8 @@
 		66E23C2928C781290004E59A /* Rubik-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E23C1F28C781290004E59A /* Rubik-BlackItalic.ttf */; };
 		66E23C2A28C781290004E59A /* Rubik-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E23C2028C781290004E59A /* Rubik-Black.ttf */; };
 		66E23C2B28C781290004E59A /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E23C2128C781290004E59A /* Rubik-Light.ttf */; };
+		66E23C2D28C7873D0004E59A /* CustomTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E23C2C28C7873D0004E59A /* CustomTabBarVC.swift */; };
+		66E23C3128C7CCFE0004E59A /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66E23C3028C7CCFE0004E59A /* TabBarVC.swift */; };
 		7231BE2B53EABBE988C72D62 /* Pods_Timefy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7AB7BBEEFCD294E6A66F9B /* Pods_Timefy.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +33,6 @@
 		660C2A6A28C632E10099B9D3 /* Timefy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timefy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		660C2A6D28C632E10099B9D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		660C2A6F28C632E10099B9D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		660C2A7128C632E10099B9D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		660C2A7428C632E10099B9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		660C2A7628C632E20099B9D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		660C2A7928C632E20099B9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +48,8 @@
 		66E23C1F28C781290004E59A /* Rubik-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-BlackItalic.ttf"; sourceTree = "<group>"; };
 		66E23C2028C781290004E59A /* Rubik-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Black.ttf"; sourceTree = "<group>"; };
 		66E23C2128C781290004E59A /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		66E23C2C28C7873D0004E59A /* CustomTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarVC.swift; sourceTree = "<group>"; };
+		66E23C3028C7CCFE0004E59A /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
 		AD7AB7BBEEFCD294E6A66F9B /* Pods_Timefy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Timefy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC2D2F151936203BE7860B69 /* Pods-Timefy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Timefy.debug.xcconfig"; path = "Target Support Files/Pods-Timefy/Pods-Timefy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -157,7 +159,8 @@
 		66E23C1428C7808D0004E59A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				660C2A7128C632E10099B9D3 /* ViewController.swift */,
+				66E23C2C28C7873D0004E59A /* CustomTabBarVC.swift */,
+				66E23C3028C7CCFE0004E59A /* TabBarVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -314,9 +317,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				660C2A7228C632E10099B9D3 /* ViewController.swift in Sources */,
 				660C2A6E28C632E10099B9D3 /* AppDelegate.swift in Sources */,
 				660C2A7028C632E10099B9D3 /* SceneDelegate.swift in Sources */,
+				66E23C3128C7CCFE0004E59A /* TabBarVC.swift in Sources */,
+				66E23C2D28C7873D0004E59A /* CustomTabBarVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
