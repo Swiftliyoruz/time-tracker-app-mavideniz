@@ -78,7 +78,10 @@
 				660C2A8228C6355B0099B9D3 /* App */,
 				660C2A8528C6356F0099B9D3 /* Asset */,
 				660C2A7328C632E10099B9D3 /* Main.storyboard */,
+				66E23C1228C77E8D0004E59A /* Models */,
 				660C2A8328C635610099B9D3 /* Scene */,
+				66E23C1128C77E7F0004E59A /* ViewControllers */,
+				66E23C1328C77E940004E59A /* ViewModels */,
 			);
 			path = Timefy;
 			sourceTree = "<group>";
@@ -115,6 +118,27 @@
 				660C2A8628C635850099B9D3 /* Color.xcassets */,
 			);
 			path = Asset;
+			sourceTree = "<group>";
+		};
+		66E23C1128C77E7F0004E59A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		66E23C1228C77E8D0004E59A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		66E23C1328C77E940004E59A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		FA574195EB3264162B8C6829 /* Pods */ = {
