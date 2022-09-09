@@ -9,27 +9,41 @@ import Foundation
 import UIKit
 
 class CustomTabBarVC: UITabBarController, UITabBarControllerDelegate {
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
-        self.selectedIndex = 1
-        setupMiddleButton()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        // Setting the UITabBarItem
+        let tab1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "OverviewVC")
+        let tab1BarItem = UITabBarItem(title: "", image: UIImage(named: "iconTime"), selectedImage: UIImage(named: "iconTime"))
+        tab1.tabBarItem = tab1BarItem
+        tab1.tabBarItem.tag = 0
+        let tab2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "AddSceneVC")
+        let tab2BarItem = UITabBarItem(title: "", image: UIImage(named: "plus"), selectedImage: UIImage(named: "plus"))
+        tab2.tabBarItem = tab2BarItem
+        tab2.tabBarItem.tag = 1
+        let tab3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "AnalysisVC")
+        let tab3BarItem = UITabBarItem(title: "", image: UIImage(named: "pie-chart"), selectedImage: UIImage(named: "pie-chart-filled"))
+        tab3.tabBarItem = tab3BarItem
+        tab3.tabBarItem.tag = 2
 
-    func setupMiddleButton() {
-        let middleButton = UIButton(frame: CGRect(x: (self.view.bounds.width / 2) - 30, y: -20, width: 60, height: 60))
-        middleButton.setBackgroundImage(UIImage(systemName: "plus.circle.fill"), for: .normal)
-        middleButton.layer.shadowColor = UIColor.black.cgColor
-        middleButton.layer.shadowOpacity = 0.1
-        middleButton.layer.shadowOffset = CGSize(width: 4, height: 4)
-        self.tabBar.addSubview(middleButton)
-        middleButton.addTarget(self, action: #selector(menuButtonAction), for: .touchUpInside)
-        self.view.layoutIfNeeded()
+        self.viewControllers = [tab1, tab2, tab3]
     }
-    @objc func menuButtonAction(sender: UIButton) {
-        self.selectedIndex = 1
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        if item.tag == 0 { // tab1(home)
+            
+            tabBar.items?[1].title = ""
+        }
+        if item.tag == 1 { // tab2(search)
+            item.title = "search"
+            tabBar.items?[0].title = ""
+        }
+        
     }
 }
+
+
+    
+
