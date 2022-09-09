@@ -8,42 +8,40 @@
 import Foundation
 import UIKit
 
-class CustomTabBarVC: UITabBarController, UITabBarControllerDelegate {
+class CustomTabBarVC: UIViewController {
+
+    @IBOutlet weak var tabBarView: UIView!
+    @IBOutlet weak var contentView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.delegate = self
+        // Do any additional setup after loading the view.
+        tabBar()
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        // Setting the UITabBarItem
-        let tab1 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "OverviewVC")
-        let tab1BarItem = UITabBarItem(title: "", image: UIImage(named: "iconTime"), selectedImage: UIImage(named: "iconTime"))
-        tab1.tabBarItem = tab1BarItem
-        tab1.tabBarItem.tag = 0
-        let tab2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "AddSceneVC")
-        let tab2BarItem = UITabBarItem(title: "", image: UIImage(named: "plus"), selectedImage: UIImage(named: "plus"))
-        tab2.tabBarItem = tab2BarItem
-        tab2.tabBarItem.tag = 1
-        let tab3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "AnalysisVC")
-        let tab3BarItem = UITabBarItem(title: "", image: UIImage(named: "pie-chart"), selectedImage: UIImage(named: "pie-chart-filled"))
-        tab3.tabBarItem = tab3BarItem
-        tab3.tabBarItem.tag = 2
 
-        self.viewControllers = [tab1, tab2, tab3]
+    func tabBar() {
+        tabBarView.layer.cornerRadius = tabBarView.frame.size.height / 2
+        tabBarView.clipsToBounds = true
     }
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        if item.tag == 0 { // tab1(home)
-            
-            tabBar.items?[1].title = ""
+
+    @IBAction func allButtonAction(_ sender: Any) {
+        let tag = (sender as AnyObject).tag
+
+        if tag == 0 {
+            guard let home = self.storyboard?.instantiateViewController(identifier: "HomeVC") as? HomeVC else { return }
+            contentView.addSubview(home.view)
+            home.didMove(toParent: self)
+
+        } else if tag == 1 {
+            guard let search = self.storyboard?.instantiateViewController(identifier: "AddTaskVC") as? AddTaskVC else { return }
+            contentView.addSubview(search.view)
+            search.didMove(toParent: self)
+
+        } else if tag == 2 {
+            guard let camera = self.storyboard?.instantiateViewController(identifier: "AnalyzeVC") as? AnalyzeVC else { return }
+            contentView.addSubview(camera.view)
+            camera.didMove(toParent: self)
+
         }
-        if item.tag == 1 { // tab2(search)
-            item.title = "search"
-            tabBar.items?[0].title = ""
-        }
-        
     }
 }
-
-
-    
-

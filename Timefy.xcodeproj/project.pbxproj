@@ -12,6 +12,9 @@
 		660C2A7528C632E10099B9D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660C2A7328C632E10099B9D3 /* Main.storyboard */; };
 		660C2A7728C632E20099B9D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 660C2A7628C632E20099B9D3 /* Assets.xcassets */; };
 		660C2A7A28C632E20099B9D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 660C2A7828C632E20099B9D3 /* LaunchScreen.storyboard */; };
+		667BF4AA28CBE5CE003A636E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BF4A928CBE5CE003A636E /* HomeVC.swift */; };
+		667BF4AC28CBE5F9003A636E /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BF4AB28CBE5F9003A636E /* AddTaskVC.swift */; };
+		667BF4AE28CBE618003A636E /* AnalyzeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BF4AD28CBE618003A636E /* AnalyzeVC.swift */; };
 		66E23C1728C780FD0004E59A /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E23C1628C780FD0004E59A /* Color.xcassets */; };
 		66E23C2228C781290004E59A /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E23C1828C781290004E59A /* Rubik-Italic.ttf */; };
 		66E23C2328C781290004E59A /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E23C1928C781290004E59A /* Rubik-MediumItalic.ttf */; };
@@ -36,6 +39,9 @@
 		660C2A7628C632E20099B9D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		660C2A7928C632E20099B9D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		660C2A7B28C632E20099B9D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		667BF4A928CBE5CE003A636E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		667BF4AB28CBE5F9003A636E /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
+		667BF4AD28CBE618003A636E /* AnalyzeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeVC.swift; sourceTree = "<group>"; };
 		66E23C1628C780FD0004E59A /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		66E23C1828C781290004E59A /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
 		66E23C1928C781290004E59A /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -158,6 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				66E23C2C28C7873D0004E59A /* CustomTabBarVC.swift */,
+				667BF4A928CBE5CE003A636E /* HomeVC.swift */,
+				667BF4AB28CBE5F9003A636E /* AddTaskVC.swift */,
+				667BF4AD28CBE618003A636E /* AnalyzeVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -314,9 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667BF4AC28CBE5F9003A636E /* AddTaskVC.swift in Sources */,
 				660C2A6E28C632E10099B9D3 /* AppDelegate.swift in Sources */,
 				660C2A7028C632E10099B9D3 /* SceneDelegate.swift in Sources */,
 				66E23C2D28C7873D0004E59A /* CustomTabBarVC.swift in Sources */,
+				667BF4AA28CBE5CE003A636E /* HomeVC.swift in Sources */,
+				667BF4AE28CBE618003A636E /* AnalyzeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TDM98LHC53;
@@ -491,6 +504,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TDM98LHC53;
