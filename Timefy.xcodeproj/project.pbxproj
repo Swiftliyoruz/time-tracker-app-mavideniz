@@ -16,6 +16,8 @@
 		667BF4AC28CBE5F9003A636E /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BF4AB28CBE5F9003A636E /* AddTaskVC.swift */; };
 		667BF4AE28CBE618003A636E /* AnalyzeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BF4AD28CBE618003A636E /* AnalyzeVC.swift */; };
 		669EF48428CE2AD5003906C4 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E23C1E28C781290004E59A /* Rubik-Medium.ttf */; };
+		66B2FCBD28CFC016006499F5 /* CurrentTaskComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B2FCBC28CFC016006499F5 /* CurrentTaskComponent.swift */; };
+		66D3B67D28CFBC6D000A6C21 /* CurrentTaskComponent.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66D3B67C28CFBC6D000A6C21 /* CurrentTaskComponent.xib */; };
 		66E23C1728C780FD0004E59A /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66E23C1628C780FD0004E59A /* Color.xcassets */; };
 		66E23C2228C781290004E59A /* Rubik-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E23C1828C781290004E59A /* Rubik-Italic.ttf */; };
 		66E23C2328C781290004E59A /* Rubik-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66E23C1928C781290004E59A /* Rubik-MediumItalic.ttf */; };
@@ -42,6 +44,8 @@
 		667BF4A928CBE5CE003A636E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		667BF4AB28CBE5F9003A636E /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
 		667BF4AD28CBE618003A636E /* AnalyzeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeVC.swift; sourceTree = "<group>"; };
+		66B2FCBC28CFC016006499F5 /* CurrentTaskComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTaskComponent.swift; sourceTree = "<group>"; };
+		66D3B67C28CFBC6D000A6C21 /* CurrentTaskComponent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrentTaskComponent.xib; sourceTree = "<group>"; };
 		66E23C1628C780FD0004E59A /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		66E23C1828C781290004E59A /* Rubik-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Italic.ttf"; sourceTree = "<group>"; };
 		66E23C1928C781290004E59A /* Rubik-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -146,6 +150,15 @@
 			path = Asset;
 			sourceTree = "<group>";
 		};
+		66D3B67928CFBC17000A6C21 /* CurrentTaskComponent */ = {
+			isa = PBXGroup;
+			children = (
+				66D3B67C28CFBC6D000A6C21 /* CurrentTaskComponent.xib */,
+				66B2FCBC28CFC016006499F5 /* CurrentTaskComponent.swift */,
+			);
+			path = CurrentTaskComponent;
+			sourceTree = "<group>";
+		};
 		66E23C1228C77E8D0004E59A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +176,7 @@
 		66E23C1428C7808D0004E59A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				66D3B67928CFBC17000A6C21 /* CurrentTaskComponent */,
 				66E23C2C28C7873D0004E59A /* CustomTabBarVC.swift */,
 				667BF4A928CBE5CE003A636E /* HomeVC.swift */,
 				667BF4AB28CBE5F9003A636E /* AddTaskVC.swift */,
@@ -257,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D3B67D28CFBC6D000A6C21 /* CurrentTaskComponent.xib in Resources */,
 				660C2A7A28C632E20099B9D3 /* LaunchScreen.storyboard in Resources */,
 				669EF48428CE2AD5003906C4 /* Rubik-Medium.ttf in Resources */,
 				66E23C2A28C781290004E59A /* Rubik-Black.ttf in Resources */,
@@ -323,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66B2FCBD28CFC016006499F5 /* CurrentTaskComponent.swift in Sources */,
 				667BF4AC28CBE5F9003A636E /* AddTaskVC.swift in Sources */,
 				660C2A6E28C632E10099B9D3 /* AppDelegate.swift in Sources */,
 				660C2A7028C632E10099B9D3 /* SceneDelegate.swift in Sources */,
