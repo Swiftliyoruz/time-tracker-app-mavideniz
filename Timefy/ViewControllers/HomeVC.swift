@@ -11,7 +11,11 @@ class HomeVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let rect = CGRect(x: 100, y: 100, width: 120, height: 240)
+        let newView = CurrentTaskComponent(frame: rect)
+        newView.backgroundColor = .black
+        self.view.addSubview(newView)
     }
 
     /*

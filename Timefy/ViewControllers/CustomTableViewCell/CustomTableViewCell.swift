@@ -9,10 +9,9 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
-    
     @IBOutlet private weak var workTypeImage: UIImageView!
     @IBOutlet private weak var workNameLabel: UILabel!
-    @IBOutlet private weak var WorkRemainTimeLabel: UILabel!
+    @IBOutlet private weak var workRemainTimeLabel: UILabel!
     @IBOutlet private weak var playButton: UIButton!
     // work tags will be come.
     override func awakeFromNib() {
@@ -25,5 +24,4 @@ class CustomTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }
