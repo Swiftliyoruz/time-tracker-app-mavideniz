@@ -15,6 +15,7 @@
 		6635EA0428D11CDA00D7D93D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6635EA0228D11CDA00D7D93D /* CustomTableViewCell.swift */; };
 		6635EA0528D11CDA00D7D93D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6635EA0328D11CDA00D7D93D /* CustomTableViewCell.xib */; };
 		6635EA0828D279EC00D7D93D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6635EA0728D279EC00D7D93D /* UIColor+Extension.swift */; };
+		6635EA0D28D27C6C00D7D93D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6635EA0C28D27C6C00D7D93D /* Constants.swift */; };
 		667BF4AA28CBE5CE003A636E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BF4A928CBE5CE003A636E /* HomeVC.swift */; };
 		667BF4AC28CBE5F9003A636E /* AddTaskVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BF4AB28CBE5F9003A636E /* AddTaskVC.swift */; };
 		667BF4AE28CBE618003A636E /* AnalyzeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 667BF4AD28CBE618003A636E /* AnalyzeVC.swift */; };
@@ -47,6 +48,7 @@
 		6635EA0228D11CDA00D7D93D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		6635EA0328D11CDA00D7D93D /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		6635EA0728D279EC00D7D93D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		6635EA0C28D27C6C00D7D93D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		667BF4A928CBE5CE003A636E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		667BF4AB28CBE5F9003A636E /* AddTaskVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskVC.swift; sourceTree = "<group>"; };
 		667BF4AD28CBE618003A636E /* AnalyzeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeVC.swift; sourceTree = "<group>"; };
@@ -109,42 +111,27 @@
 		660C2A6C28C632E10099B9D3 /* Timefy */ = {
 			isa = PBXGroup;
 			children = (
-				6635EA0628D279DC00D7D93D /* Extensions */,
 				660C2A7B28C632E20099B9D3 /* Info.plist */,
-				660C2A8228C6355B0099B9D3 /* App */,
-				660C2A8528C6356F0099B9D3 /* Asset */,
-				660C2A7328C632E10099B9D3 /* Main.storyboard */,
+				660C2A8228C6355B0099B9D3 /* Application */,
+				6635EA0B28D27C5500D7D93D /* Common */,
+				6635EA0E28D27C7F00D7D93D /* Model */,
 				66E23C1228C77E8D0004E59A /* Models */,
-				660C2A8328C635610099B9D3 /* Scene */,
-				66E23C1428C7808D0004E59A /* ViewControllers */,
-				66E23C1328C77E940004E59A /* ViewModels */,
+				66E23C1428C7808D0004E59A /* View */,
+				66E23C1328C77E940004E59A /* ViewModel */,
 			);
 			path = Timefy;
 			sourceTree = "<group>";
 		};
-		660C2A8228C6355B0099B9D3 /* App */ = {
+		660C2A8228C6355B0099B9D3 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				660C2A6F28C632E10099B9D3 /* SceneDelegate.swift */,
 				660C2A6D28C632E10099B9D3 /* AppDelegate.swift */,
+				660C2A6F28C632E10099B9D3 /* SceneDelegate.swift */,
+				660C2A8528C6356F0099B9D3 /* Asset */,
+				6635EA0928D27BEF00D7D93D /* Base */,
+				6635EA0A28D27C0800D7D93D /* CustomTabBar */,
 			);
-			path = App;
-			sourceTree = "<group>";
-		};
-		660C2A8328C635610099B9D3 /* Scene */ = {
-			isa = PBXGroup;
-			children = (
-				660C2A8428C635670099B9D3 /* LaunchScreen */,
-			);
-			path = Scene;
-			sourceTree = "<group>";
-		};
-		660C2A8428C635670099B9D3 /* LaunchScreen */ = {
-			isa = PBXGroup;
-			children = (
-				660C2A7828C632E20099B9D3 /* LaunchScreen.storyboard */,
-			);
-			path = LaunchScreen;
+			path = Application;
 			sourceTree = "<group>";
 		};
 		660C2A8528C6356F0099B9D3 /* Asset */ = {
@@ -174,6 +161,39 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6635EA0928D27BEF00D7D93D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				660C2A7828C632E20099B9D3 /* LaunchScreen.storyboard */,
+				660C2A7328C632E10099B9D3 /* Main.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6635EA0A28D27C0800D7D93D /* CustomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				66E23C2C28C7873D0004E59A /* CustomTabBarVC.swift */,
+			);
+			path = CustomTabBar;
+			sourceTree = "<group>";
+		};
+		6635EA0B28D27C5500D7D93D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6635EA0628D279DC00D7D93D /* Extensions */,
+				6635EA0C28D27C6C00D7D93D /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6635EA0E28D27C7F00D7D93D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		66D3B67928CFBC17000A6C21 /* CurrentTaskComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,24 +210,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		66E23C1328C77E940004E59A /* ViewModels */ = {
+		66E23C1328C77E940004E59A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		66E23C1428C7808D0004E59A /* ViewControllers */ = {
+		66E23C1428C7808D0004E59A /* View */ = {
 			isa = PBXGroup;
 			children = (
 				6635EA0128D11C9500D7D93D /* CustomTableViewCell */,
 				66D3B67928CFBC17000A6C21 /* CurrentTaskComponent */,
-				66E23C2C28C7873D0004E59A /* CustomTabBarVC.swift */,
 				667BF4A928CBE5CE003A636E /* HomeVC.swift */,
 				667BF4AB28CBE5F9003A636E /* AddTaskVC.swift */,
 				667BF4AD28CBE618003A636E /* AnalyzeVC.swift */,
 			);
-			path = ViewControllers;
+			path = View;
 			sourceTree = "<group>";
 		};
 		66E23C1528C780EE0004E59A /* Fonts */ = {
@@ -369,6 +388,7 @@
 				6635EA0428D11CDA00D7D93D /* CustomTableViewCell.swift in Sources */,
 				6635EA0828D279EC00D7D93D /* UIColor+Extension.swift in Sources */,
 				660C2A6E28C632E10099B9D3 /* AppDelegate.swift in Sources */,
+				6635EA0D28D27C6C00D7D93D /* Constants.swift in Sources */,
 				660C2A7028C632E10099B9D3 /* SceneDelegate.swift in Sources */,
 				66E23C2D28C7873D0004E59A /* CustomTabBarVC.swift in Sources */,
 				667BF4AA28CBE5CE003A636E /* HomeVC.swift in Sources */,
