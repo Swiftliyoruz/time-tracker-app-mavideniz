@@ -64,8 +64,20 @@
                     <view key="view" contentMode="scaleToFill" id="RQX-qx-k5F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9J-MI-c0L" customClass="CurrentTaskComponent" customModule="Timefy" customModuleProvider="target">
+                                <rect key="frame" x="16" y="168" width="382" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dCb-n8-Rpm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="k9J-MI-c0L" firstAttribute="height" secondItem="RQX-qx-k5F" secondAttribute="height" multiplier="0.142857" id="3WR-3K-9jD"/>
+                            <constraint firstItem="k9J-MI-c0L" firstAttribute="top" secondItem="dCb-n8-Rpm" secondAttribute="top" constant="24" id="6rb-PJ-NGZ"/>
+                            <constraint firstItem="dCb-n8-Rpm" firstAttribute="trailing" secondItem="k9J-MI-c0L" secondAttribute="trailing" constant="16" id="Ep5-sG-ygJ"/>
+                            <constraint firstItem="k9J-MI-c0L" firstAttribute="leading" secondItem="dCb-n8-Rpm" secondAttribute="leading" constant="16" id="q2G-HV-L1n"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Task" largeTitleDisplayMode="always" id="tJ3-Cd-0Pa">
                         <barButtonItem key="rightBarButtonItem" image="more" id="GjC-9n-pnW"/>
