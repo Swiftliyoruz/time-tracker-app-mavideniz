@@ -7,21 +7,33 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet private weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .appWhite
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        self.registerTableViewCells()
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func registerTableViewCells() {
+        let textFieldCell = UINib(nibName: "CustomTableViewCell",
+            bundle: nil)
+        self.tableView.register(textFieldCell,
+            forCellReuseIdentifier: "CustomTableViewCell")
     }
-    */
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "CustomTableViewCell") as? CustomTableViewCell {
+            return cell
+        }
+
+        return UITableViewCell()
+    }
 }

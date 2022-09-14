@@ -10,6 +10,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Rubik-Regular.ttf">
+            <string>Rubik-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Tab Bar Controller-->
         <scene sceneID="8Ik-eX-wic">
@@ -43,7 +48,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" name="appBlack"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="24"/>
+                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="24"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="Rubik-Black" family="Rubik" pointSize="22"/>
@@ -68,20 +73,65 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9J-MI-c0L" customClass="CurrentTaskComponent" customModule="Timefy" customModuleProvider="target">
                                 <rect key="frame" x="16" y="168" width="382" height="128"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TBU-9x-y9d">
+                                <rect key="frame" x="16" y="328" width="124" height="24"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I13-pO-Pae">
+                                <rect key="frame" x="274" y="329" width="124" height="19"/>
+                                <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="tableview" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZeJ-zN-h7B">
+                                <rect key="frame" x="16" y="368" width="382" height="403"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="XR4-96-K4b">
+                                        <rect key="frame" x="0.0" y="50" width="382" height="90"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XR4-96-K4b" id="iak-4i-ygJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="382" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dCb-n8-Rpm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="k9J-MI-c0L" firstAttribute="height" secondItem="RQX-qx-k5F" secondAttribute="height" multiplier="0.142857" id="3WR-3K-9jD"/>
                             <constraint firstItem="k9J-MI-c0L" firstAttribute="top" secondItem="dCb-n8-Rpm" secondAttribute="top" constant="24" id="6rb-PJ-NGZ"/>
+                            <constraint firstItem="I13-pO-Pae" firstAttribute="width" secondItem="RQX-qx-k5F" secondAttribute="width" multiplier="0.3" id="6xg-SH-Yut"/>
                             <constraint firstItem="dCb-n8-Rpm" firstAttribute="trailing" secondItem="k9J-MI-c0L" secondAttribute="trailing" constant="16" id="Ep5-sG-ygJ"/>
+                            <constraint firstItem="dCb-n8-Rpm" firstAttribute="trailing" secondItem="ZeJ-zN-h7B" secondAttribute="trailing" constant="16" id="GuX-tx-82Q"/>
+                            <constraint firstItem="TBU-9x-y9d" firstAttribute="leading" secondItem="dCb-n8-Rpm" secondAttribute="leading" constant="16" id="Hmo-Tv-5gg"/>
+                            <constraint firstItem="dCb-n8-Rpm" firstAttribute="trailing" secondItem="I13-pO-Pae" secondAttribute="trailing" constant="16" id="ILa-19-icm"/>
+                            <constraint firstItem="I13-pO-Pae" firstAttribute="top" secondItem="k9J-MI-c0L" secondAttribute="bottom" constant="33" id="g3q-QS-8nv"/>
+                            <constraint firstItem="ZeJ-zN-h7B" firstAttribute="top" secondItem="TBU-9x-y9d" secondAttribute="bottom" constant="16" id="jKZ-vL-e4d"/>
+                            <constraint firstItem="ZeJ-zN-h7B" firstAttribute="leading" secondItem="dCb-n8-Rpm" secondAttribute="leading" constant="16" id="lOH-ui-Y1S"/>
+                            <constraint firstItem="TBU-9x-y9d" firstAttribute="top" secondItem="k9J-MI-c0L" secondAttribute="bottom" constant="32" id="ngq-uu-Phs"/>
+                            <constraint firstItem="TBU-9x-y9d" firstAttribute="width" secondItem="RQX-qx-k5F" secondAttribute="width" multiplier="0.3" id="oMU-b3-icf"/>
                             <constraint firstItem="k9J-MI-c0L" firstAttribute="leading" secondItem="dCb-n8-Rpm" secondAttribute="leading" constant="16" id="q2G-HV-L1n"/>
+                            <constraint firstItem="ZeJ-zN-h7B" firstAttribute="height" secondItem="RQX-qx-k5F" secondAttribute="height" multiplier="0.45" id="rfJ-A4-73N"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Task" largeTitleDisplayMode="always" id="tJ3-Cd-0Pa">
                         <barButtonItem key="rightBarButtonItem" image="more" id="GjC-9n-pnW"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ZeJ-zN-h7B" id="fDE-l0-QQ1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahS-JZ-GBB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +181,7 @@
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Rubik-Black" family="Rubik" pointSize="24"/>
+                            <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="24"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>

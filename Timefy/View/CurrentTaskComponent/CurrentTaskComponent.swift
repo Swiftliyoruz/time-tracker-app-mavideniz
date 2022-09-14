@@ -14,7 +14,7 @@ class CurrentTaskComponent: UIView {
     @IBOutlet private weak var timeTextLabel: UILabel!
     @IBOutlet private weak var projectNameLabel: UILabel!
     @IBOutlet private weak var goDetailButton: UIButton!
-
+    @IBOutlet private weak var workTypeIconImage: UIImageView!
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initSubviews()

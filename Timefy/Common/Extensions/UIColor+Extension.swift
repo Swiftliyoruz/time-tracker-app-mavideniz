@@ -31,8 +31,6 @@ extension UIColor {
     class var appBlack: UIColor {
         return self.hexColor(0x070417, alpha: 1.0)
     }
-
-
     class func hexColor(_ hexColorNumber: UInt32, alpha: CGFloat) -> UIColor {
         let red = (hexColorNumber & 0xff0000) >> 16
         let green = (hexColorNumber & 0x00ff00) >> 8

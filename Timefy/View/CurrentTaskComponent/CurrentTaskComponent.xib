@@ -19,6 +19,7 @@
                 <outlet property="goDetailButton" destination="krc-74-dHq" id="yZc-Rk-NOp"/>
                 <outlet property="projectNameLabel" destination="Du1-aU-D1I" id="COG-ay-dNf"/>
                 <outlet property="timeTextLabel" destination="4F9-ux-ERj" id="RlG-Ar-WMs"/>
+                <outlet property="workTypeIconImage" destination="Xk0-Ud-Grc" id="LPV-rR-LPa"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -45,7 +46,7 @@
                     <rect key="frame" x="16" y="74" width="12" height="12"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Du1-aU-D1I">
-                    <rect key="frame" x="40" y="71" width="97.5" height="19"/>
+                    <rect key="frame" x="40" y="71" width="100.5" height="19"/>
                     <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -67,6 +68,11 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <real key="value" value="48"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <point key="canvasLocation" x="163" y="139"/>
         </view>
     </objects>
